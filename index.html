@@ -5,6 +5,13 @@
 <title>Fumiya – AI Portfolio</title>
 <style>
 body { font-family: sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.7; }
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
 h1 { font-size: 2.2rem; }
 h2 { margin-top: 2rem; }
 section { margin-bottom: 2.2rem; }
@@ -22,11 +29,25 @@ ul { margin-left: 1.2rem; }
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
+  .project-card {
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border: 1px solid #f0f0f0;
+  background: #fafbff;
+}
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.project-card p {
+  margin: 0;
 }
 </style>
 </head>
 <body>
-
+<div class="container">
+  
 <header>
   <img src="IMG_0285.jpeg" alt="Fumiya" class="avatar">
   <div>
@@ -65,15 +86,20 @@ ul { margin-left: 1.2rem; }
 
 <section>
 <h2>📁 代表プロジェクト</h2>
-
+<div class="project-card">
 <h3>① 業務AI導入 / LangChain × RAG 開発</h3>
 <p>業務マニュアル・社内ドキュメントをRAG化し、LangChain × FastAPI で業務AIチャットを構築。要件整理〜運用まで一貫して担当。</p>
+</div>
 
+<div class="project-card">
 <h3>② AIアシスタント開発（感情解析 × API連携）</h3>
 <p>テキスト感情解析モデルを使い、外部システム（Slack等）へ自動通知するワークフローを構築。モデル評価・API連携・通知ロジック設計を担当。</p>
+</div>
 
+<div class="project-card">
 <h3>③ 業界横断AIプロトタイプ（高速MVP開発）</h3>
 <p>不動産・物流・採用など複数業界向けにAIプロトタイプを高速開発。ChatGPT API × 軽量UIで業務試験導入まで対応。</p>
+</div>
 
 </section>
 
@@ -82,5 +108,6 @@ ul { margin-left: 1.2rem; }
 <p>Tech Direct 経由でご連絡ください。</p>
 </section>
 
+</div>
 </body>
 </html>
